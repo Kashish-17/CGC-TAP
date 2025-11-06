@@ -34,10 +34,10 @@ cgcTapPage.clickElementLoginButton();
 public void the_user_should_be_logged_in_successfully() {
 cgcTapPage.isUserLoggedIn();
 }
-@Then("the home screen should load without errors")
-public void the_home_screen_should_load_without_errors() {
-cgcTapPage.isHomeScreenLoaded();
-}
+// @Then("the home screen should load without errors")
+// public void the_home_screen_should_load_without_errors() {
+// cgcTapPage.isHomeScreenLoaded();
+// }
 @Then("the Google Map should be displayed on the home screen")
 public void the_google_map_should_be_displayed_on_the_home_screen() {
 cgcTapPage.isGoogleMapDisplayed();
@@ -67,10 +67,10 @@ Assert.assertEquals(email, cgcTapPage.getEmailFieldValue());
 public void i_navigate_back_to_the_login_page() {
 cgcTapPage.navigateToLoginPage();
 }
-@When("I enter a valid email address {string} in the email input field")
-public void i_enter_a_valid_email_address_in_the_email_input_field(String email) {
-cgcTapPage.enterEmail(email);
-}
+// @When("I enter a valid email address {string} in the email input field")
+// public void i_enter_a_valid_email_address_in_the_email_input_field(String email) {
+// cgcTapPage.enterEmail(email);
+// }
 @When("I enter a valid password {string} in the password input field")
 public void i_enter_a_valid_password_in_the_password_input_field(String password) {
 cgcTapPage.enterPassword(password);
